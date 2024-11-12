@@ -1,19 +1,51 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import LandingPage from './landingpage/LandingPage';
+import LevelOne from './Level1/Apppp';  // Level One logic
+import LevelTwo from './Level2/Appp'; // Level Two logic
+import LevelThree from './Level3/App'; // Level Three logic
+import LearnCommands from './learnlinux/learnlinux';
 import reportWebVitals from './reportWebVitals';
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+  {/*    <Routes>
+        {/* Default path to the landing page */}
+        {/* <Route path="/home" element={<LandingPage />} />
+
+        {/* Routes for each level */}
+        {/* <Route path="/level-one" element={<LevelOne />} />
+        <Route path="/level-two" element={<LevelTwo />} />
+        <Route path="/level-three" element={<LevelThree />} />
+        <Route path="/learn-commands" element={<LearnCommands />} />
+      </Routes> */}
+       <Routes>
+  {/* Route for root path */}
+  <Route path="/" element={<LandingPage />} />
+
+  {/* Default path to the landing page */}
+  <Route path="/home" element={<LandingPage />} />
+
+  {/* Routes for each level */}
+  <Route path="/level-one" element={<LevelOne />} />
+  <Route path="/level-two" element={<LevelTwo />} />
+  <Route path="/level-three" element={<LevelThree />} />
+  <Route path="/learn-commands" element={<LearnCommands />} />
+</Routes>
+</Router>
   </React.StrictMode>
+  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+
 reportWebVitals();

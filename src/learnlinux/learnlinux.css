@@ -1,0 +1,65 @@
+
+
+
+.commands-container {
+  min-height: 10vh;        /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+    margin-bottom: ;
+    text-align: center;
+    background-color: hsl(0, 0%, 96%);
+     /* margin-bottom:10px; */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 20%);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 58px;
+    color: #444;
+  }
+  
+  .github-link {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .github-link:hover {
+    color: #0056b3;
+  }
+  
+
+.footer {
+  /* position:absolute; */
+  
+  position:-webkit-sticky;            
+  min-height: 25.5vh; 
+  text-align: center;
+  background-color: #dab7ec;
+  color: #000000;
+  font-size: 1rem;     
+width: 100%;               
+  margin-bottom: 0%;                  
+  /* position:absolute;             */
+      
+  padding-left: 10px;
+padding-right: 10px;  
+padding-bottom: 1px;
+}
+
+
+.btn-landing-page {
+  background-color: #4754b8; /* Blue */
+}
+
+.btn-landing-page:hover {
+  background-color: #3b48a1; /* Darker Blue */
+}

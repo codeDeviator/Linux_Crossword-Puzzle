@@ -1,0 +1,262 @@
+/* 
+   .landing-container {
+    text-align: center;
+    overflow: hidden; 
+    height:fit-content;
+    width: auto;
+    padding: 0px;
+   } */
+
+ .landing-header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+} 
+
+.about-section {
+    margin: 40px 0;
+}
+
+.button-section {
+    margin-top: 30px;
+}
+
+.btn {
+    /* display:inherit; */
+    padding: 1px 3px;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Color and Hover Effects */
+.btn-level-one {
+    background-color: #28a745; /* Green */
+}
+
+.btn-level-one:hover {
+    background-color: #218838; /* Darker Green */
+}
+
+.btn-level-two {
+    background-color: #994393; /* Purple */
+}
+
+.btn-level-two:hover {
+    background-color: #7d3480; /* Darker Purple */
+}
+
+.btn-level-three {
+    background-color: #ffc107; /* Yellow */
+}
+
+.btn-level-three:hover {
+    background-color: #e0a800; /* Darker Yellow */
+}
+
+.btn-learn-commands {
+  background-color: #4754b8; /* Blue */
+}
+
+.btn-learn-commands:hover {
+  background-color: #3b48a1; /* Darker Blue */
+}
+
+/* .footer {
+    margin: 10vh, 10vh, 100vh, 10vh;
+    padding: 20px;
+    background-color: #2032;
+} */
+
+.footer {
+ /* Fixed position to stick it to the bottom */
+  bottom: 0; /* Aligns it to the bottom of the viewport */
+  left: 0;
+  width: 100vh; /* Full width to span the entire page */
+  padding: 15px 8px;
+  background-color: #2032;
+  text-align: center;
+  z-index: 10; /* Ensures it stays above other elements if needed */
+}
+
+
+.footer { 
+  padding: 0%;
+  text-align: center;
+  background-color: #d181f7 ;
+  color: #000000;
+  font-size: 0rem;
+  margin: 5%;
+  margin-left: 0vh;
+  margin-right: 0vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: auto;
+}
+  .footer {
+    text-align: center;
+    background-color: #d181f7;
+    color: #000000;
+    font-size: 1rem;     
+    width: 100vw;               
+    margin-left: 0px;                  
+    position:-webkit-sticky;            
+    bottom: 0;                  
+    left: 0;       
+    padding-left: 10px;
+  padding-right: 10px;           
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body, html {
+    height: 100px;               /* Full height for body and html */
+    /* margin: 0 ;                  No default margin
+  }
+   */
+  /* Container to hold content and footer */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;          /* Full viewport height */
+  }
+  
+  /* Main content that pushes footer to the bottom */
+  .content {
+    flex: 1;                    /* Expands to fill available space */
+  }
+
+
+.footer p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #000000; /* or any accent color */
+}    
+
+.instructions-section {
+  background-color: #f7f9fc; /* Light background for contrast */
+  padding: 40px; /* Ample padding for a spacious feel */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 20px auto; /* Center the section */
+  max-width: 800px; /* Limit width for better readability */
+}
+
+.instructions-section h2 {
+  font-size: 2.5rem; /* Larger heading */
+  color: #4a4a4a; /* Darker text color */
+  margin-bottom: 20px; /* Space below heading */
+  border-bottom: 2px solid #28a745; /* Underline for emphasis */
+  padding-bottom: 10px; /* Space between heading and underline */
+}
+
+.instructions-section h3 {
+  font-size: 1.8rem; /* Slightly smaller than h2 */
+  color: #4a4a4a; /* Consistent text color */
+  margin-top: 30px; /* Space above each subsection */
+  margin-bottom: 10px; /* Space below each subsection */
+}
+
+.instructions-section p {
+  font-size: 1.1rem; /* Standard paragraph text size */
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #5a5a5a; /* Slightly lighter text color */
+  margin: 10px 0; /* Vertical space between paragraphs */
+}
+
+.instructions-section ul {
+  list-style-type: disc; /* Default bullet points */
+  padding-left: 20px; /* Indentation for list */
+  margin: 10px 0; /* Vertical space around lists */
+}
+
+.instructions-section ul li {
+  font-size: 1.1rem; /* Same size as paragraphs */
+  color: #5a5a5a; /* Consistent text color */
+  margin: 5px 0; /* Space between list items */
+}
+
+.instructions-section h3::before {
+  content: "▶ "; /* Arrow before each subsection title */
+  color: #28a745; /* Green color for arrows */
+}
+
+.instructions-section p:last-of-type {
+  font-weight: bold; /* Bold last paragraph for emphasis */
+  color: #28a745; /* Green color for encouragement */
+  font-size: 1.2rem; /* Slightly larger */
+}
+
+.landing-container {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); /* Gradient background */
+  margin: 0; /* Reset margins */
+  font-family: 'Arial', sans-serif; /* Font family for better aesthetics */
+}
+
+.landing-header {
+  margin-bottom: 30px; /* Space below header */
+}
+
+.landing-header h1 {
+  font-size: 4rem; /* Large font size for title */
+  color: #2e4c6d; /* Dark blue color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  letter-spacing: 2px; /* Space between letters */
+}
+
+.about-section {
+  background: white; /* White background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  padding: 40px; /* Padding for content */
+  max-width: 800px; /* Limit width for better readability */
+  text-align: left; /* Align text to the left */
+}
+
+.about-section h2 {
+  font-size: 2.5rem; /* Slightly smaller than header */
+  color: #4a4a4a; /* Dark gray color for headings */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.about-section p {
+  font-size: 1.2rem; /* Standard paragraph size */
+  line-height: 1.6; /* Improved line height */
+  color: #5a5a5a; /* Slightly lighter gray for body text */
+  margin: 10px 0; /* Space around paragraphs */
+}
+
+@media (max-width: 768px) {
+  .landing-header h1 {
+      font-size: 3rem; /* Adjust header size for smaller screens */
+  }
+
+  .about-section h2 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .about-section p {
+      font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+}
