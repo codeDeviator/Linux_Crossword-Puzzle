@@ -1,23 +1,23 @@
-# Step 1: Base Image set karo, yaha node image ka use ho raha hai
+# Step 1: Set base image, node is used here
 FROM node:20
 
-# Step 2: Working Directory set karo
+# Step 2: Set up of working directory
 WORKDIR /app
 
-# Step 3: Dependencies copy karo
+# Step 3: copy the dependencies of the project
 COPY package*.json ./
 
-# Step 4: Dependencies install karo
+# Step 4: install dependencies
 RUN npm install
 
-# Step 5: Source code copy karo
+# Step 5: copy source code
 COPY . .
 
-# Step 6: Production build command agar tumhara project React mein hai
+# Step 6: Production build command if your project is in React
 RUN npm run build
 
-# Step 7: Default port expose karo (3000 React ke liye, agar tumne alag port nahi rakha hai)
+# Step 7: Default port expose 
 EXPOSE 3000
 
-# Step 8: Start command define karo
+# Step 8: Start command defined
 CMD ["npm", "start"]
