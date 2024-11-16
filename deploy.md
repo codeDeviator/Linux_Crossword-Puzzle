@@ -17,18 +17,15 @@ You can deploy this application on a local server using a bash script.
 
 2. **Run the Deployment Script**  
    * Open your terminal and navigate to the folder where the script was downloaded:  
-     bash
 
       cd  /home/ayush/Desktop/ibtc/your-app-name
 
-   * Grant execute permissions to the script:  
-     bash
-
+   * Grant execute permissions to the script:
+     
      chmod \+x deploy.sh  
        
-   * Run the script to install necessary tools and start the server:  
-     bash
-
+   * Run the script to install necessary tools and start the server:
+     
      ./deploy.sh  
    * After deployment, you can access the game at [http://localhost:3000](http://localhost:3000/)/
 
