@@ -11,6 +11,7 @@ You can deploy this application on a local server using a bash script.
 1. **Download the Deployment Script**  
    * Locate the deploy.sh script in your repository. Click on deploy.sh, and then use the "Download" icon to download the file.
 
+![Alt Text](https://github.com/codeDeviator/)
 
 **deploy.sh script**
 
