@@ -8,6 +8,10 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 echo "Installing curl..."
 sudo apt-get install curl -y
 
+# Step 3: Install git
+echo "Installing git..."
+sudo apt-get install git -y
+
 # Step 3: Install NVM (Node Version Manager)
 echo "Installing NVM..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
