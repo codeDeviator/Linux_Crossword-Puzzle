@@ -12,15 +12,15 @@ sudo apt-get install curl -y
 echo "Installing git..."
 sudo apt-get install git -y
 
-# Step 3: Install NVM (Node Version Manager)
+# Step 4: Install NVM (Node Version Manager)
 echo "Installing NVM..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
-# Step 4: Load NVM into the current session
+# Step 5: Load NVM into the current session
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This line sources NVM for current session
 
-# Step 5: Install Node.js and npm via NVM
+# Step 6: Install Node.js and npm via NVM
 NODE_VERSION="18"  # Set the Node.js version you want to install
 echo "Installing Node.js version $NODE_VERSION using NVM..."
 nvm install $NODE_VERSION
@@ -31,7 +31,7 @@ nvm alias default $NODE_VERSION
 node -v
 npm -v
 
-# Step 6: Search for the repository using 'find'
+# Step 7: Search for the repository using 'find'
 echo "Searching the system for the repository Linux_Crossword-Puzzle..."
 REPO_PATH=$(find / -type d -name "Linux_Crossword-Puzzle" 2>/dev/null)
 
@@ -43,9 +43,6 @@ else
   echo "Repository found at: $REPO_PATH"
   cd "$REPO_PATH"
 fi
-
-# Step 7: Navigate to the 'your-app-name' folder (or your project folder)
-cd your-app-name
 
 # Step 8: Install project dependencies
 echo "Installing project dependencies..."
