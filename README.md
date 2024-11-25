@@ -18,7 +18,7 @@ You can deploy this application on a local server using a bash script.
 2. **Run the Deployment Script**  
    * Open your terminal and navigate to the folder where the script was downloaded:  
 
-      cd  /home/ayush/Desktop/ibtc/your-app-name
+      Go to the download directory
 
    * Grant execute permissions to the script:
      
