@@ -12,7 +12,7 @@ const LearnCommands: React.FC = () => {
         To explore a comprehensive list of Linux commands, visit our GitHub repository:
       </p>
       <a
-        href="https://github.com/codeDeviator/Linux-Commands" // Replace with your actual GitHub repository link
+        href="https://github.com/bobbyiliev/101-linux-commands-ebook?tab=readme-ov-file" // Replace with your actual GitHub repository link
         target="_blank"
         rel="noopener noreferrer"
         className="github-link"
