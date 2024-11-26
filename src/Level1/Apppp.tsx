@@ -38,8 +38,8 @@ const ipuzData = {
     ],
     Down: [
     [1, 'Sorts lines of text files'],
-    [2, 'output a specified number of lines or bytes of each of the specified files from the top'],
-    [4, 'Printing the content in long list format and showing escape characters on the file or directory name.']
+    [2, 'Output a specified number of lines or bytes of each of the specified files from the top'],
+    [4, 'Printing the content of a directory in long list format']
     ],
   },
 
